@@ -1,50 +1,70 @@
 /* Official Hubtree (http://www.hubtree.co.uk) Style Guide using CSS */
 
 body {
-    background-color: lightskyblue;
-    color: white;
+
     text-justify: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    background-blend-mode: soft-light;
+    font-size: 1.5em;
+    line-height: 1.6;
+    font-weight: 400px;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222;
 }
-
-:link {
-    color: white;
+.form {
+    text-align: center;
 }
-
+.button {
+    width: 100px;
+}
 .grid-container {
     display: grid;
-    grid-template-columns: 0.7fr 1.3fr 1fr 1.2fr 0.8fr;
-    grid-template-rows: 0.2fr 1.5fr 1.3fr 1fr;
-    grid-template-areas: "left_1 header_nav header_nav header_nav right_1" "left_1 hero hero hero right_1" "left_1 article_1 article_1 nav_2 right_1" "left_1 footer_1 footer_2 footer_3 right_1";
+    grid-template-columns: 0.5fr 1.5fr 1fr 1.4fr 0.6fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 1fr;
+    grid-template-areas: "left_1 logo nav_1 nav_1 right_1" "left_1 hero hero hero right_1" "left_1 content content content right_1" "left_1 footer_1 footer_2 footer_3 right_1";
   }
   
-  .header_nav { 
-      grid-area: header_nav;
-      text-align: right;
+  .logo { 
+      grid-area: logo; 
+        color: grey;
+    }
+  
+  .nav_1 { 
+      grid-area: nav_1;
+      text-align: right; 
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: .2rem;
+      margin-right: 35px;
+      text-decoration: none;
+      line-height: 6.5rem;
+      color: #222;
+  }
+  
+  .hero { grid-area: hero; }
+  
+  .content { 
+      grid-area: content;
+      text-align: center;
+      align-content: center;    
     
     }
-    
-  .hero { 
-      grid-area: hero; }
-  
-  .article_1 { 
-      grid-area: article_1; }
-  
-  .nav_2 {
-       grid-area: nav_2; }
   
   .footer_1 { 
       grid-area: footer_1;
-      font-size: 14px;  }
+   
+    }
   
   .footer_2 { 
       grid-area: footer_2;
-      font-size: 14px; }
+ 
+    }
   
   .footer_3 { 
       grid-area: footer_3;
-      font-size: 14px;
-     }
+
+    }
   
   .left_1 { grid-area: left_1; }
   
