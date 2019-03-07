@@ -1,31 +1,51 @@
 /* Official Hubtree (http://www.hubtree.co.uk) Style Guide using CSS */
 
+body {
+    background-color: lightskyblue;
+    color: white;
+    text-justify: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-/* Official Hubtree (http://www.hubtree.co.uk) Style Guide using CSS */
+:link {
+    color: white;
+}
 
 .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 1.5fr 1.3fr 1fr;
-  grid-template-areas: "header header header header" "hero hero hero hero" "content content content right_nav" "footer_1 footer_2 footer_3 footer_4";
-}
-
-.header { 
-    grid-area: header;
-    text-align: right;
-
-}
-
-.hero { grid-area: hero; }
-
-.content { grid-area: content; }
-
-.right_nav { grid-area: right_nav; }
-
-.footer_1 { grid-area: footer_1; }
-
-.footer_2 { grid-area: footer_2; }
-
-.footer_3 { grid-area: footer_3; }
-
-.footer_4 { grid-area: footer_4; }
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr 1fr 1.2fr 0.8fr;
+    grid-template-rows: 0.2fr 1.5fr 1.3fr 1fr;
+    grid-template-areas: "left_1 header_nav header_nav header_nav right_1" "left_1 hero hero hero right_1" "left_1 article_1 article_1 nav_2 right_1" "left_1 footer_1 footer_2 footer_3 right_1";
+  }
+  
+  .header_nav { 
+      grid-area: header_nav;
+      text-align: right;
+    
+    }
+    
+  .hero { 
+      grid-area: hero; }
+  
+  .article_1 { 
+      grid-area: article_1; }
+  
+  .nav_2 {
+       grid-area: nav_2; }
+  
+  .footer_1 { 
+      grid-area: footer_1;
+      font-size: 14px;  }
+  
+  .footer_2 { 
+      grid-area: footer_2;
+      font-size: 14px; }
+  
+  .footer_3 { 
+      grid-area: footer_3;
+      font-size: 14px;
+     }
+  
+  .left_1 { grid-area: left_1; }
+  
+  .right_1 { grid-area: right_1; }
