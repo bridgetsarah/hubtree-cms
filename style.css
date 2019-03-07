@@ -13,8 +13,7 @@
 .header { 
     grid-area: header;
     text-align: right;
-    background-color: dodgerblue; 
-    text-emphasis-color: white;   
+
 }
 
 .hero { grid-area: hero; }
