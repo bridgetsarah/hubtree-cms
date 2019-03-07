@@ -1,0 +1,32 @@
+/* Official Hubtree (http://www.hubtree.co.uk) Style Guide using CSS */
+
+
+/* Official Hubtree (http://www.hubtree.co.uk) Style Guide using CSS */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1.3fr 1fr;
+  grid-template-areas: "header header header header" "hero hero hero hero" "content content content right_nav" "footer_1 footer_2 footer_3 footer_4";
+}
+
+.header { 
+    grid-area: header;
+    text-align: right;
+    background-color: dodgerblue; 
+    text-emphasis-color: white;   
+}
+
+.hero { grid-area: hero; }
+
+.content { grid-area: content; }
+
+.right_nav { grid-area: right_nav; }
+
+.footer_1 { grid-area: footer_1; }
+
+.footer_2 { grid-area: footer_2; }
+
+.footer_3 { grid-area: footer_3; }
+
+.footer_4 { grid-area: footer_4; }
