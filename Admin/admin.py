@@ -6,7 +6,7 @@ settings = ('settings')
 
 # Administration Dashboard Menu
 
-def admin_dash ():
+def admin_dash ():                              #Main menu on dashboard with main links
 
     analytics = ('analytics')
     clients = ('clients')
@@ -16,14 +16,14 @@ def admin_dash ():
 
 print (admin_dash())
 
-# Analytics Menu
+# Analytics Menu                               # Analytics Menu (covering SEO+Traffic)
 def admin_analytics():
     traffic = ('traffic')
     return('admin_analytics')
 print(admin_analytics())
 
-# Client Mnenu
-def admin_clients():
+# Client Menu
+def admin_clients():                           # Client menu (account details)
     account_id = ('INT')
     account_name = ('')
     website_status = ('INT')

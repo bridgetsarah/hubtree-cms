@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- Base Template for Backend of Hubtree CMS-->
+<html>
+
+<head>
+<title>{% block title%} { {% endblock %}}</title>
+<link rel"stylesheet" href="/skeleton.css">
+<link rel"stylesheet" href="/normalize.css">
+</head>
+
+<body>
+
+<div id="header">
+    <form action="{% url cms-search %}" methord-"get">
+    <a href="{% url cms-home %}}">home</a>
+    <label for"q">Search:</label> <input type="text" name="q">
+    </form>
+</div>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>
