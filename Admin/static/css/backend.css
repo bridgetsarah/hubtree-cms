@@ -1,0 +1,25 @@
+
+
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.4fr 0.3fr 1.1fr 2.2fr 1.6fr 0.4fr;
+    grid-template-rows: 0.8fr 1.2fr 1fr;
+    grid-template-areas: "left_1 pop navigation project project right_1" "left_1 pop navigation content_1 content_1 right_1" "left_1 pop navigation content_2 content_2 right_1";
+  }
+  
+  .left_1 { grid-area: left_1; }
+  
+  .pop { grid-area: pop; }
+  
+  .navigation { grid-area: navigation; }
+  
+  .project { grid-area: project; }
+  
+  .content_1 { grid-area: content_1; }
+  
+  .content_2 { grid-area: content_2; }
+  
+  .right_1 { grid-area: right_1; }
