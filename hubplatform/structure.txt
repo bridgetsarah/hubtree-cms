@@ -1,0 +1,11 @@
+######################################################################
+Hubplatform Django Directory - Notes
+######################################################################
+/apps  - customised django projects
+/bin - automate development with bash scripts
+/config - files for db, webservers, munin, celery, supervisory etc
+/media   - CSS/JS files 
+/static  - Compressed assets get dumped into for production
+/templates - html files
+/vendor - un-used applications
+######################################################################
